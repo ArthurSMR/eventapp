@@ -10,8 +10,6 @@
 //MAGRO TOP
 //ARTHUR TOP
 
-//makoto teste
-
 
 import UIKit
 import CoreData
