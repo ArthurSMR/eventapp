@@ -6,6 +6,10 @@
 //  Copyright © 2019 Arthur Rodrigues. All rights reserved.
 //
 
+//GABI É TOP
+//MAGRO TOP
+
+
 import UIKit
 import CoreData
 import Firebase
