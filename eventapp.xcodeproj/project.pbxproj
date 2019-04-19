@@ -17,6 +17,9 @@
 		36615E442268E9BE000DECA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36615E422268E9BE000DECA8 /* LaunchScreen.storyboard */; };
 		36615E4F2268E9BE000DECA8 /* eventappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36615E4E2268E9BE000DECA8 /* eventappTests.swift */; };
 		36615E5A2268E9BE000DECA8 /* eventappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36615E592268E9BE000DECA8 /* eventappUITests.swift */; };
+		36A38218226A23AE009F42E8 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A38217226A23AE009F42E8 /* EventsTableViewCell.swift */; };
+		36A3821A226A27C0009F42E8 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A38219226A27C0009F42E8 /* Event.swift */; };
+		36A3821C226A4469009F42E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A3821B226A4469009F42E8 /* HomeViewController.swift */; };
 		78259588EBBB6031C0102E66 /* Pods_eventapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96DF0DD80AF61E5E8686BDD /* Pods_eventapp.framework */; };
 		907E206B17E35DA6558E3BBC /* Pods_eventappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9439D2FA1BE6CF07C7865DD /* Pods_eventappTests.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +60,9 @@
 		36615E552268E9BE000DECA8 /* eventappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eventappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36615E592268E9BE000DECA8 /* eventappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventappUITests.swift; sourceTree = "<group>"; };
 		36615E5B2268E9BE000DECA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36A38217226A23AE009F42E8 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		36A38219226A27C0009F42E8 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		36A3821B226A4469009F42E8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4079E8CAB0F4866B7E56CD21 /* Pods-eventapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventapp.release.xcconfig"; path = "Target Support Files/Pods-eventapp/Pods-eventapp.release.xcconfig"; sourceTree = "<group>"; };
 		657EB7E261F742CB0512F3D6 /* Pods-eventappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventappTests.debug.xcconfig"; path = "Target Support Files/Pods-eventappTests/Pods-eventappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0FA3FB5B867743AD898D710 /* Pods_eventappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eventappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +136,9 @@
 			children = (
 				36615E362268E9BD000DECA8 /* AppDelegate.swift */,
 				36615E382268E9BD000DECA8 /* ViewController.swift */,
+				36A3821B226A4469009F42E8 /* HomeViewController.swift */,
+				36A38217226A23AE009F42E8 /* EventsTableViewCell.swift */,
+				36A38219226A27C0009F42E8 /* Event.swift */,
 				36615E3A2268E9BD000DECA8 /* Main.storyboard */,
 				36615E402268E9BE000DECA8 /* Assets.xcassets */,
 				36615E422268E9BE000DECA8 /* LaunchScreen.storyboard */,
@@ -402,9 +411,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A38218226A23AE009F42E8 /* EventsTableViewCell.swift in Sources */,
 				36615E392268E9BD000DECA8 /* ViewController.swift in Sources */,
 				36615E372268E9BD000DECA8 /* AppDelegate.swift in Sources */,
 				36615E3F2268E9BD000DECA8 /* eventapp.xcdatamodeld in Sources */,
+				36A3821A226A27C0009F42E8 /* Event.swift in Sources */,
+				36A3821C226A4469009F42E8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

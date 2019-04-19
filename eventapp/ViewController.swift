@@ -14,9 +14,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var imageView: UIImage?
     let imagePicker = UIImagePickerController()
     
-    
+    var events: [Event] = []
+    //reference to the database
     var ref: DatabaseReference?
-    
+
+    //objects from the first view
     @IBOutlet weak var nameChange: UITextField!
     @IBOutlet weak var ageChange: UITextField!
     @IBOutlet weak var UIImageView: UIImageView!
@@ -27,6 +29,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.delegate = self
     }
 
+    //opening the library to get a photo
     @IBAction func CameraButton(_ sender: Any) {
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
@@ -34,6 +37,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         present(imagePicker, animated: true, completion: nil)
     }
     
+    //showing the photo that picked before at the ImageView
     internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[.originalImage] as? UIImage {
             imageView = pickedImage
@@ -46,16 +50,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         
     }
-    
-    
-    
+    // this funcion to change at the database
     @IBAction func changeName(_ sender: UIButton) {
         ref = Database.database().reference()
         
-//
+
         ref?.child("someid/name").setValue(nameChange.text)
         ref?.child("someid/age").setValue(ageChange.text)
     }
     
 }
+
 
