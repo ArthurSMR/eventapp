@@ -59,7 +59,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="6Kx-xJ-cKc" kind="show" id="Ysb-jf-ebh"/>
+                                    <segue destination="hNY-qv-Kr8" kind="show" identifier="goToHome" id="Ysb-jf-ebh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,13 +85,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Este fim de semana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCG-lC-T9u">
-                                <rect key="frame" x="20" y="44" width="259" height="36"/>
+                                <rect key="frame" x="20" y="88" width="259" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="exW-Em-PvD">
-                                <rect key="frame" x="0.0" y="80" width="414" height="782"/>
+                                <rect key="frame" x="0.0" y="124" width="414" height="738"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventsTableViewCell" id="ckc-cr-UTs" customClass="EventsTableViewCell" customModule="eventapp" customModuleProvider="target">
@@ -151,11 +151,30 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3gD-VT-YKQ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="T5C-uL-kjp"/>
                     <connections>
                         <outlet property="tableView" destination="exW-Em-PvD" id="wEc-W2-6Fz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZR-xV-jni" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797.1014492753625" y="28.794642857142854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="trL-Kt-Dpk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hNY-qv-Kr8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qny-oT-1qV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6Kx-xJ-cKc" kind="relationship" relationship="rootViewController" id="D9r-Yy-gTX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ceo-GF-M0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886.95652173913049" y="28.794642857142854"/>
         </scene>
