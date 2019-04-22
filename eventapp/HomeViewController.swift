@@ -15,6 +15,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var events: [Event] = []
     //reference to the database
     
+    var selectedEvent: Event!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,9 +68,30 @@ extension HomeViewController {
         return cell
     }
     
+    
+    
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+        
+        self.selectedEvent = self.events[indexPath.row]
+        
+//        let vc = storyboard?.instantiateInitialViewController(withIdentifier: "DetailEventViewController") as? DetailEventViewController
+//        self.navigationController?.pushViewController(vc!, animated: true)
+        self.performSegue(withIdentifier: "detailEvent", sender: self)
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailEvent" {
+            
+            let detailVc = segue.destination as! DetailEventViewController
+            
+            
+
+            detailVc.labelText = self.selectedEvent.title
+            detailVc.imageV = self.selectedEvent.image
+            
+            
+        }
     }
     
     
