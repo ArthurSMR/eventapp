@@ -6,6 +6,7 @@
 //  Copyright © 2019 Arthur Rodrigues. All rights reserved.
 //
 //oi
+//oi 2
 import UIKit
 
 class EventsTableViewCell: UITableViewCell {
