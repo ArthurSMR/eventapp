@@ -18,6 +18,7 @@ class SearchEventViewController: UIViewController {
     var filteredEvents = [Event]()
     let searchController = UISearchController(searchResultsController: nil)
    
+    let events = Service.allEvents()
    
     // MARK: - Private instance methods
     
@@ -28,7 +29,7 @@ class SearchEventViewController: UIViewController {
     
     func filterContentForSearchText(_ searchText: String, scope: String = "All") {
         filteredEvents = events.filter({( event : Event) -> Bool in
-            return event.name.lowercased().contains(searchText.lowercased())
+            return event.title.lowercased().contains(searchText.lowercased())
         })
         
         tableView.reloadData()
@@ -68,7 +69,7 @@ class SearchEventViewController: UIViewController {
             event = events[indexPath.row]
         }
         cell.textLabel!.text = event.title
-        cell.detailTextLabel!.text = event.image
+       // cell.detailTextLabel!.text = event.image
         return cell
     }
     /*
