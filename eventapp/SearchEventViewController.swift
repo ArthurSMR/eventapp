@@ -31,8 +31,8 @@ class SearchEventViewController: UIViewController {
         filteredEvents = events.filter({( event : Event) -> Bool in
             return event.title.lowercased().contains(searchText.lowercased())
         })
-        
-        tableView.reloadData()
+//        
+//        tableView.reloadData()
     }
     
     @IBOutlet weak var hoje: UIButton!  //qdo selecionar mudar de cor

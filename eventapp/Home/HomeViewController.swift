@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -14,6 +15,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var events: [Event] = []
     //reference to the database
+    var ref: DatabaseReference?
     
     var selectedEvent: Event!
     
@@ -63,14 +65,10 @@ extension HomeViewController {
             
             let detailVc = segue.destination as! DetailEventViewController
             
-            
-
             detailVc.labelText = self.selectedEvent.title
             detailVc.imageV = self.selectedEvent.image
             
             
         }
     }
-    
-    
 }

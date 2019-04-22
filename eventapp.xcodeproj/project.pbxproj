@@ -140,12 +140,10 @@
 		36615E352268E9BD000DECA8 /* eventapp */ = {
 			isa = PBXGroup;
 			children = (
+				36854509226E4DAF00C41F76 /* Home */,
 				5E77D1BE226E4B5000F3F9B5 /* Model */,
 				36615E362268E9BD000DECA8 /* AppDelegate.swift */,
 				36615E382268E9BD000DECA8 /* ViewController.swift */,
-				36A3821B226A4469009F42E8 /* HomeViewController.swift */,
-				36A38217226A23AE009F42E8 /* EventsTableViewCell.swift */,
-				36A38219226A27C0009F42E8 /* Event.swift */,
 				36615E3A2268E9BD000DECA8 /* Main.storyboard */,
 				36615E402268E9BE000DECA8 /* Assets.xcassets */,
 				36615E422268E9BE000DECA8 /* LaunchScreen.storyboard */,
@@ -153,7 +151,6 @@
 				364E27B92268EBFF00B392B0 /* GoogleService-Info.plist */,
 				36615E3D2268E9BD000DECA8 /* eventapp.xcdatamodeld */,
 				5E77D1BC226E271000F3F9B5 /* SearchEventViewController.swift */,
-				36854507226E401D00C41F76 /* DetailEventViewController.swift */,
 			);
 			path = eventapp;
 			sourceTree = "<group>";
@@ -174,6 +171,25 @@
 				36615E5B2268E9BE000DECA8 /* Info.plist */,
 			);
 			path = eventappUITests;
+			sourceTree = "<group>";
+		};
+		36854509226E4DAF00C41F76 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				36A3821B226A4469009F42E8 /* HomeViewController.swift */,
+				36A38217226A23AE009F42E8 /* EventsTableViewCell.swift */,
+				36A38219226A27C0009F42E8 /* Event.swift */,
+				3685450A226E4E0300C41F76 /* DetailEvent */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3685450A226E4E0300C41F76 /* DetailEvent */ = {
+			isa = PBXGroup;
+			children = (
+				36854507226E401D00C41F76 /* DetailEventViewController.swift */,
+			);
+			path = DetailEvent;
 			sourceTree = "<group>";
 		};
 		5E77D1BE226E4B5000F3F9B5 /* Model */ = {
